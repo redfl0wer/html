@@ -10,3 +10,11 @@
   color: tomato;
   margin-left: 7px;
 }
+
+.nav__btn__ellipsis-selected{
+  color: #615309;
+}
+
+.more-screen .icon-row{
+  margin-top: 25px;
+}

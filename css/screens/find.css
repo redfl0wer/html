@@ -105,3 +105,7 @@
 .open-post__heart-counts span{
   margin-left: 5px;
 }
+
+.nav__btn__search-selected{
+  color: #615309;
+}
