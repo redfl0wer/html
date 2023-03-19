@@ -1,0 +1,12 @@
+.user-component__phone-number{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 17px;
+  color: rgba(0,0,0,0.5);
+}
+
+.user-component__number :first-child{
+  color: tomato;
+  margin-left: 7px;
+}

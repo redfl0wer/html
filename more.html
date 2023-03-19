@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find - Kokoa Clone</title>
+  <title>More - Kokoa Clone</title>
 </head>
 
 <body>
@@ -26,9 +26,10 @@
   </div>
 
   <header class="screen-header">
-    <h1 class="screen-header__title">Find</h1>
+    <h1 class="screen-header__title">More</h1>
     <div class="screen-header__icons">
       <span><i class="fas fa-search fa-lg"></i></span>
+      <span><i class="fas fa-music fa-lg"></i></span>
       <span><a class="nav__link">
           <div class="screen-header__small_notification"></div><i class="fas fa-cog fa-lg"></i></span>
       </a>
@@ -36,42 +37,20 @@
   </header>
 
   <main class="main-screen">
-    <div class="find-icons">
-      <div class="find-icons__icon"><i class="fas fa-qrcode"></i><span>QR code</span></div>
-      <div class="find-icons__icon"><i class="far fa-address-book"></i><span>Add by Contacts</span></div>
-      <div class="find-icons__icon"><i class="fas fa-plus"></i><span>Add by ID</span></div>
-      <div class="find-icons__icon"><i class="far fa-envelope"></i><span>Invite</span></div>
+    <div class="user-component">
+      <div class="user-component__column">
+        <img src="img/20230314_192755.png" class="user-component__avatar user-component__avatar--xl" />
+        <div class="user-component__text" />
+        <h4 class="user-component__title">WooChan</h4>
+        <a class="user-component__phone-number">
+          <h6 class="user-component__number">010-1234-5678<i class="fas fa-exclamation-circle fa-xs"></i></h6>
+        </a>
+      </div>
     </div>
-    <div>
-      <div class="recommended-friends">
-        <h6 class="recommended-friends__title">Recommended Friends</h6>
-        <span>You have no recommended friends.</span>
-      </div>
-      <div class="open-chat">
-        <div class="open-chat__header">
-          <h4 class="open-chat__title">Open Chat</h4>
-          <span>Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i></span>
-        </div>
-        <div class="open-post">
-          <div class="open-post__column">
-            <h5 class="open-post__title">#Newjeans</h5>
-            <h6 class="open-post__hashtags">#newjeans#minji#friends</h6>
-            <div class="open-post__members">
-              <img src="img/20230314_192755.png" />
-              <span class="open-post__member-count">999 members</span>
-              <div class="divider"></div>
-              <span class="open-post__member-status">Active</span>
-            </div>
-          </div>
-          <div class="open-post__column">
-            <div class="open-post__image">
-              <img class="open-post__image"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8OcU9OxsMkuqnyAoS3g772MU7jKDgQ3WOMw&usqp=CAU" />
-              <div class="open-post__heart-counts"><i class="fas fa-heart fa-xs"></i><span>777</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="user-component__column">
+      <i class="far fa-comment-alt fa-2x"></i>
+    </div>
+    </div>
   </main>
 
 
