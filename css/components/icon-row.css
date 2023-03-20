@@ -1,6 +1,5 @@
 .icon-row{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 25px;
 }
@@ -9,6 +8,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80px;
+  height: 80px;
 }
 
 .icon-row__icon i{

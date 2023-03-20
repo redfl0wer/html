@@ -18,3 +18,45 @@
 .more-screen .icon-row{
   margin-top: 25px;
 }
+
+.suggestions{
+  margin-top: 15px;
+  border-top:var(--main-border);
+  padding-top: 40px;
+}
+
+.suggestions__header{
+  margin-bottom: 30px;
+}
+
+.suggestions__header h4{
+  font-weight: 600;
+}
+
+.suggestions__icon-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggestions__icon-row__icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.suggestions__icon-row__icon img{
+  width: 65px;
+  height: 65px;
+}
+
+.suggestions__icon-row__icon__no-border{
+  border: 1.5px solid black;
+  border-radius: 15px;
+}
+
+.suggestions__icon-row__icon span{
+  margin-top: 15px;
+  opacity: 0.7;
+}
