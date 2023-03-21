@@ -1,0 +1,25 @@
+.settings-list{
+  align-items: center;
+}
+
+.settings-settings{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.settings-settings i{
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.settings-settings span{
+  font-size: 21px;
+}
+
+.settings-settings: nth-child(3){
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+}
