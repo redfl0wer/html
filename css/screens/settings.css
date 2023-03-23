@@ -2,24 +2,28 @@
   align-items: center;
 }
 
-.settings-settings{
+.settings__setting{
   padding-top: 30px;
   padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.settings-settings i{
+.settings__setting-column i{
   font-size: 25px;
   width: 25px;
   height: 25px;
   margin-right: 20px;
+  opacity: 0.8;
 }
 
-.settings-settings span{
+.settings__setting-column span{
   font-size: 21px;
 }
 
-.settings-settings: nth-child(3){
-  display: block;
-  align-items: center;
-  justify-content: space-between;
+.settings__setting-column:last-child{
+  opacity:0.5;
 }
+
