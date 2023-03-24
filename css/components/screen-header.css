@@ -1,10 +1,14 @@
 .screen-header{
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
-  padding-top: 45px;
-  margin-bottom: 15px;
+  padding-top: 55px;
+  margin-bottom: 25px;
+  position: sticky;
+  background-color: white;
+  z-index: 1;
 }
 .screen-header__title{
   font-size: 30px;

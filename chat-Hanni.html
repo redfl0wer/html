@@ -10,7 +10,7 @@
 </head>
 
 <body id="chat-screen">
-  <div class="status-bar">
+  <div class="chat__status-bar">
     <div class="status-bar__column">
       <span>No Service</span>
       <i class="fas fa-wifi"></i>
@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  <header class="alt-header">
+  <header class="chat__alt-header">
     <div class="alt-header__column">
       <a href="javascript:history.back();">
         <i class="fas fa-angle-left fa-2x"></i>
@@ -42,7 +42,32 @@
     </div>
   </header>
 
-  <main class="main-screen"></main>
+  <main class="main-screen main-chat">
+    <div class="chat__date">
+      Thursday, March 23, 2023
+    </div>
+    
+    <div class="message-row">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwGzr-486gl7Bukp0vlGLXez6ySYM_5q9VTw&usqp=CAU"/>
+        <div class="message-row__content">
+          <span class="message__author">Hanni</span>
+          <div class="message__info">
+            <span class="message__bubble">It's been to long! What classes are you taking this semester?</span>
+            <span class="message__time">22:54</span>
+          </div>
+        </div>
+      </div>
+
+     <div class="message-row message-row--reply">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">I love you</span>
+            <span class="message__time">23:38</span>
+          </div>
+        </div>
+      </div>
+    
+  </main>
 
   <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
