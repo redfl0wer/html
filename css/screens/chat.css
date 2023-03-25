@@ -116,3 +116,60 @@
   font-size: 13px;
   margin-right: 5px;
 }
+
+.input{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.input .input__column:first-child{
+  width: 5%;
+}
+
+.input .input__column:last-child{
+  width: 95%;
+  position: relative;
+}
+
+.input__column > i{
+  opacity: 0.5;
+} 
+
+.input input{
+  padding: 10px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 15px;
+}
+
+.input__column:last-child > i,
+.input__column:last-child button{
+  position: absolute;
+  right: -20px;
+  top: 3px;
+}
+
+.input__column:last-child > i{
+  right: 17px;
+  top: 13px;
+}
+
+.input__column button{
+  background-color: var(--yellow);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.input__column button:focus,
+.input__column button:active{
+  outline: none;
+}
