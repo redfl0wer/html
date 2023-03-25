@@ -20,11 +20,12 @@
   align-items: center;
   justify-content: space-between;
   background-color: #abc1d1;
+  z-index: 1;
 }
 
 #chat-screen{
   background-color: #abc1d1;
-  height: 11001vh;
+  height: 500vh;
 }
 
 #chat-screen .alt-header{
@@ -34,11 +35,23 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeIn{
+  from{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to{
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat{
   padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.3s linear;
 }
 
 #chat-screen .status-bar{
@@ -127,6 +140,7 @@
   padding: 5px 25px;
   box-sizing: border-box;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .input .input__column:first-child{
@@ -138,8 +152,18 @@
   position: relative;
 }
 
+@keyframes hideIcons{
+  from{
+    opacity: 0.5;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
 .input__column > i{
   opacity: 0.5;
+  transition: hideIcons 0.3s ease-in-out;
 } 
 
 .input input{
@@ -147,17 +171,19 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
-.input__column:last-child > i,
 .input__column:last-child button{
   position: absolute;
-  right: -20px;
+  right: 5px;
   top: 3px;
 }
 
 .input__column:last-child > i{
-  right: 17px;
+  position: absolute;
+  right: 42px;
   top: 13px;
 }
 
@@ -172,4 +198,20 @@
 .input__column button:focus,
 .input__column button:active{
   outline: none;
+}
+
+.input:focus-within .input__column:first-child,
+.input:focus-within .fa-smile-wink,
+.input:focus-within button{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.input:focus-within input{
+  width: 95vw;
+  transform: translateX(-6%) translateY(-90px);
+}
+
+.input:focus-within{
+  transform: translateY(80px);
 }
